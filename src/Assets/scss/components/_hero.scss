@@ -1,0 +1,259 @@
+/** ---------
+ Hero section css
+ ------- **/
+
+@use "../utils/variables";
+
+.fa-service__wrapper {
+    padding-right: 0;
+
+    img {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.fa-slider {
+    &__arrow-box {
+        position: absolute;
+        left: 42.2%;
+        top: 80%;
+        transform: translateY(-50%);
+        z-index: 10;
+        background-color: var(--fa-common-white);
+
+        @media only screen and (min-width: 1400px) and (max-width: 1599px) {
+            left: 42%;
+            top: 70%;
+        }
+
+        // @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+        //     left: 41.8%;
+        //     top: 78%;
+        // }
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            left: 50%;
+            top: 70%;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            display: none;
+        }
+
+        @media only screen and (min-width: 440px) and (max-width: 575px) {
+            display: none;
+        }
+
+        & .slider-next button {
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            border-radius: 50%;
+            border: none;
+            background: none;
+        }
+
+        &-prev {
+            position: absolute;
+            right: 57.8%;
+            top: 87.2%;
+            transform: translateY(-50%);
+            z-index: 10;
+            background-color: var(--fa-common-white);
+
+            @media only screen and (min-width: 1400px) and (max-width: 1599px) {
+                right: 58%;
+                top: 75%;
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                // right: 58.1%;
+                top: 85.4%;
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                right: 49.8%;
+                top: 77%;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                display: none;
+            }
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+
+            @media only screen and (min-width: 576px) and (max-width: 767px) {
+                display: none;
+            }
+
+            @media only screen and (min-width: 440px) and (max-width: 575px) {
+                display: none;
+            }
+
+            & .slider-prev button {
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 45px;
+                border-radius: 50%;
+                border: none;
+                background: none;
+            }
+        }
+    }
+}
+
+.tp-hero {
+    &-subtitle {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 27px;
+        color: var(--fa-grey);
+        position: relative;
+        display: inline-block;
+        margin-bottom: 10px;
+
+        @media only screen and (max-width: 1200px) and (max-width: 1399px) {
+            font-size: 17px;
+        }
+    }
+
+    &-title {
+        text-transform: uppercase;
+        color: #222;
+        letter-spacing: 1px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 70px;
+        color: var(--fa-common-brown);
+
+        @media only screen and (min-width: 1400px) and (max-width: 1599px) {
+            font-size: 65px;
+        }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+            font-size: 65px;
+        }
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            font-size: 58px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            font-size: 50px;
+
+            br {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            font-size: 42px;
+
+            br {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            font-size: 48px;
+
+            br {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 440px) and (max-width: 575px) {
+            font-size: 54px;
+        }
+    }
+
+    &__left-text p {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 40px;
+        color: var(--fa-grey);
+
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            br {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            br {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__left-box {
+        padding-left: 100px;
+
+        @media only screen and (min-width: 1400px) and (max-width: 1599px) {
+            padding: 120px 30px;
+        }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+            padding: 120px 30px;
+        }
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            padding: 120px 30px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            padding: 120px 30px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 120px 30px;
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            padding: 120px 30px;
+        }
+
+        @media only screen and (min-width: 440px) and (max-width: 575px) {
+            padding: 120px 30px;
+        }
+    }
+}
+
+.tp-btn-brown {
+    border: 1px solid var(--fa-common-brown);
+    padding: 0 32px;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 25px;
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: none;
+    text-transform: uppercase;
+
+    &:hover {
+        border: 1px solid var(--fa-common-brown);
+        background: var(--fa-common-brown);
+        color: var(--fa-common-white);
+    }
+}

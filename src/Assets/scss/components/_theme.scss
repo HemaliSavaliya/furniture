@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@use "../utils/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.p-relative {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-light {
+    background-color: var(--fa-bg-light) !important;
+}
+
+.heading-banner-area {
+    background: rgba(0, 0, 0, 0) url("/assets/img/bg/product.jpg") no-repeat scroll center center/cover;
+}
+
+.about-banner-area {
+    background: rgba(0, 0, 0, 0) url("/assets/img/bg/about.jpg") no-repeat scroll center center/cover;
+}
+
+.overlay-bg {
+    position: relative;
+}
+
+.overlay-bg::before {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+// common banner title css
+.heading-banner-title h2 {
+    position: relative;
+    color: var(--fa-common-white);
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 33px;
+    margin-bottom: 0;
+    padding: 134px 0 101px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.breadcumbs ul {
+    overflow: hidden;
+}
+
+.breadcumbs li {
+    color: var(--fa-common-white) !important;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--fa-common-white) !important;
+}
+
+.breadcumbs li:first-child {
+    margin-left: 0;
+}
+
+.breadcumbs ul li a {
+    color: var(--fa-common-white);
+    display: block;
+    text-decoration: none;
+}
+
+.breadcumbs ul li:hover a {
+    color: var(--fa-dark-brown);
+}
+
+.breadcumbs li:first-child::after {
+    content: "";
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    background: var(--fa-text-background) none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+    color: var(--fa-textBox-color);
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    outline: none;
+    font-size: 13px;
+}
+
+// customize scroll bar
+
+// scroll bar
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #72747c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--fa-common-brown);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--fa-light-brown);
+}
+
+// preloader css
+#preloader {
+    background: var(--fa-bg-light) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#table,
+#chair {
+    width: 5%;
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+
+    #table,
+    #chair {
+        width: 5%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    #table,
+    #chair {
+        width: 5%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    #table,
+    #chair {
+        width: 5%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    #table,
+    #chair {
+        width: 8%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #table,
+    #chair {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    #table,
+    #chair {
+        width: 10%;
+    }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 575px) {
+
+    #table,
+    #chair {
+        width: 10%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeInOut 1s infinite;
+}

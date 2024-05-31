@@ -1,0 +1,72 @@
+/** ---------
+ Categories page css
+ ------- **/
+
+@use "../utils/variables";
+
+.tp-product-5 {
+    &__content {
+        a {
+            text-decoration: none;
+        }
+
+        & span {
+            color: #787981;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: capitalize;
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px),
+            only screen and (min-width: 768px) and (max-width: 991px),
+            (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &__title {
+        color: var(--fa-common-black);
+        font-size: 171px;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 0;
+        transition: 0.3s;
+        margin-top: 15px;
+
+        &:hover {
+            color: var(--fa-common-brown);
+        }
+    }
+
+    &__thumb {
+        font-size: 20px;
+        color: #999;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--fa-bg-light);
+        box-shadow: 0 0 5px 1px #00000029;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+
+        @media only screen and (max-width: 575px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+/** ---------
+ Newsletter section css
+ ------- **/
+
+@use "../utils/variables";
+
+.news {
+    &-bg img {
+        width: 100%;
+
+        @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (min-width: 440px) and (max-width: 575px) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__section {
+        background-color: var(--fa-common-brown);
+        color: var(--fa-common-white);
+        padding: 25px 40px;
+
+        input {
+            font-size: 16px;
+            width: 100%;
+            padding-left: 20px;
+            line-height: 60px;
+            border: none;
+            outline: none;
+        }
+
+        .sub-btn {
+            font-size: 13px;
+            border: none;
+            background: var(--fa-common-white);
+            color: #201f20;
+            margin-top: 35px;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    &__border {
+        border: 1px solid #906e51;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 200;
+        padding-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+
+        @media (max-width:991px) {
+            br {
+                display: none;
+            }
+        }
+    }
+}
